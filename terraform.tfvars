@@ -32,8 +32,8 @@ lambda_functions = {
         runtime = "nodejs10.x"
         memory = 256
         timeOut = 300
-        secGroup = ["sg-00f92b2bb85401f43"]
-        subnetIds = ["subnet-57c2ff6a","subnet-4bd0dc3d"]
+        secGroup = ["XXXXXXXXXXXXXXX"]
+        subnetIds = ["XXXXXXXXXXXXXXX","XXXXXXXXXXXXXXX"]
         POST = "N"
         GET = "N"
     },
@@ -65,8 +65,8 @@ lambda_functions = {
         runtime = "python3.8"
         memory = 128
         timeOut = 30
-        secGroup = ["sg-00f92b2bb85401f43"]
-        subnetIds = ["subnet-57c2ff6a","subnet-4bd0dc3d"]
+        secGroup = ["XXXXXXXXXXXXXXX"]
+        subnetIds = ["XXXXXXXXXXXXXXX","XXXXXXXXXXXXXXX"]
         POST = "N"
         GET = "Y"
     }
