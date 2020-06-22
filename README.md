@@ -1,4 +1,4 @@
-# aws-lambda-apigw-terraform
+# aws-lambda-apigw-terraform. terraform v0.12
 This repo is used to launch api gateway &amp; lambda service dynamically. For example, in terraform.tfvars
 
 	1. You can add / remove x number of lambda's by passing the details in lambda_functions variable.
