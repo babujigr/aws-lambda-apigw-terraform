@@ -49,3 +49,6 @@ variable "api_resources" {
   )
 }
 variable "apigw_responses" {}
+variable "lambda_function_ids" {
+    default = ""
+}

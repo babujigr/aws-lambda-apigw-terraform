@@ -2,6 +2,9 @@
 data "aws_lambda_function" "lambda" {
   for_each = var.lambda_functions
   function_name = "${each.key}-${var.environment}"
+  depends_on = [
+    var.lambda_function_ids
+  ]
 }
 
 # API Gateway

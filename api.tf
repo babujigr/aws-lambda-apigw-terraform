@@ -3,6 +3,7 @@
 module "api" {
 source = "./modules/api" 
 
+lambda_function_ids =  [module.lambda.lambda_function_name]
 lambda_functions = var.lambda_functions
 environment = var.environment
 apiName = "${var.apiName}-${var.environment}"
