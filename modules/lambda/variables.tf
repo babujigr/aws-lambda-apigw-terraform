@@ -13,8 +13,6 @@ variable "lambda_functions" {
         timeOut = number
         secGroup = list(string)
         subnetIds = list(string)
-        POST = string
-        GET = string
   }))
 }
 

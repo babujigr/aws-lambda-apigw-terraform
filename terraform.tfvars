@@ -1,6 +1,7 @@
 # Specify the Lambda function Names
-s3BucketName="xxxxxxxxxxxxxx"
+s3SourceCodeBucket="bxxxx-xxx-xxxx"
 environment = "dev"
+s3WebSiteBucket="bx-xxxx-xxxx"
 iamRoleName = "lambda_role"
 apiName = "petApi"
 lambda_functions = {
@@ -12,8 +13,6 @@ lambda_functions = {
         timeOut = 30
         secGroup = []
         subnetIds = []
-        POST = "Y"
-        GET = "N"
     },
     example02 = {
         fileName = "example02.zip"
@@ -23,8 +22,6 @@ lambda_functions = {
         timeOut = 30
         secGroup = []
         subnetIds = []
-        POST = "Y"
-        GET = "N"
     },
     example03 = {
         fileName = "example03.zip"
@@ -32,10 +29,8 @@ lambda_functions = {
         runtime = "nodejs10.x"
         memory = 256
         timeOut = 300
-        secGroup = ["XXXXXXXXXXXXXXX"]
-        subnetIds = ["XXXXXXXXXXXXXXX","XXXXXXXXXXXXXXX"]
-        POST = "N"
-        GET = "N"
+        secGroup = ["sg-xxxxxxxxxxxxxxx"]
+        subnetIds = ["subnet-xxxxxx","subnet-4xxxxx"]
     },
     lambda01 = {
         fileName = "lambda01.zip"
@@ -45,8 +40,6 @@ lambda_functions = {
         timeOut = 300
         secGroup = []
         subnetIds = []
-        POST = "N"
-        GET = "N"
     },
     lambda02 = {
         fileName = "lambda02.zip"
@@ -56,8 +49,6 @@ lambda_functions = {
         timeOut = 30
         secGroup = []
         subnetIds = []
-        POST = "N"
-        GET = "N"
     },
     lambda03 = {
         fileName = "lambda03.zip"
@@ -65,10 +56,8 @@ lambda_functions = {
         runtime = "python3.8"
         memory = 128
         timeOut = 30
-        secGroup = ["XXXXXXXXXXXXXXX"]
-        subnetIds = ["XXXXXXXXXXXXXXX","XXXXXXXXXXXXXXX"]
-        POST = "N"
-        GET = "Y"
+        secGroup = ["sg-0xxxxx"]
+        subnetIds = ["subnet-xxxa","subnet-xxxxxd"]
     }
 }
 
@@ -126,3 +115,4 @@ EOF
       }
     }
   ]
+

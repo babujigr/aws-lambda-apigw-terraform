@@ -9,4 +9,5 @@ environment = var.environment
 apiName = "${var.apiName}-${var.environment}"
 api_resources = var.api_resources
 apigw_responses = var.apigw_responses
+
 }

@@ -17,7 +17,17 @@ variable "iam_vpc_policy_name" {
     default = "vpc_network_policy"
 }
 
+variable "s3SourceCodeBucket" {
+    type = string
+    default = ""
+}
+
 variable "s3BucketName" {
+    type = string
+    default = ""
+}
+
+variable "s3WebSiteBucket" {
     type = string
     default = ""
 }
@@ -31,8 +41,6 @@ variable "lambda_functions" {
         timeOut = number
         secGroup = list(string)
         subnetIds = list(string)
-        POST = string
-        GET = string
   }))
 }
 variable "apiName" {
